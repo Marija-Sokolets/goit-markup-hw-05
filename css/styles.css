@@ -648,10 +648,22 @@ img {
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    fill: var(--color-navy-blue);
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--color-cornflower);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: var(--color-ocean);
+    fill: var(--color-white);
 }
 
 .modal-icon {
+    display: block;
     margin: 0 auto;
 }
+
